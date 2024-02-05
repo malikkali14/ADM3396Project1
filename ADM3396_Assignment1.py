@@ -2,9 +2,7 @@ class User:
     def __init__(self, username, password):
         self.username = username
         self.password = password
-        self.user = {}
-        self.user["username"] = self.username
-        self.user["password"] = self.password
+        self.user = {"username": self.username, "password": self.password}
     
     def setPassword(self, newPassword):
         self.password = newPassword
@@ -18,14 +16,15 @@ class User:
         print(self.user)
 
 class Food:
-    def __init__(self, item, price, type, diet, cuisine, review):
-        self.food = {}
-        food["item"] = item
-        food["food"] = price
-        food["type"] = type
-        food["food"] = diet
-        food["cuisine"] = cuisine 
-        food["review"] = review 
+    def __init__(self, item, price, food_type, diet, cuisine, review):
+        self.food = {
+            "item": item, 
+            "price": price, 
+            "type": food_type, 
+            "diet": diet, 
+            "cuisine": cuisine, 
+            "review": review
+        }
     
     def setPrice(self, newPrice):
         price = newPrice
@@ -42,16 +41,34 @@ class Food:
         return self.food["item"]
 
 class Menu:
-    def __init__(food):
-        menu = {}
-        menu[food.getFood()] = food.getFood()
+    def __init__(self):
+        self.menu = {}
+    
+    def addFood(self, food):
+        self.menu[food.getFoodItem()] = food.getFood()
+
+    def removeFood(self, foodItem):
+        if foodItem in self.menu:
+            del self.menu[foodItem]
+
+    def showMenu(self):
+        for item, details in self.menu.items():
+            print(f"{item}: {details}")
     
     def getMenu(self):
-
-
-
+        print(self.menu)
+   
 
 x = User("hi", "bye")
 x.getUser()
 x.setUsername("ebebe")
 x.getUser()
+
+food1 = Food("Pizza", 10, "Dinner", "Non-Vegetarian", "Italian", 5)
+food2 = Food("Salad", 5, "Lunch", "Vegetarian", "Various", 4)
+
+menu = Menu()
+menu.addFood(food1)
+menu.addFood(food2)
+menu.showMenu()
+menu.getMenu()
