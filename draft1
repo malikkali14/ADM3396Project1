@@ -60,8 +60,7 @@ for restriction in restrictions:
             print(dishes['dietary'])
 
 #options
-
-
+[ dish for dish in dishes['cuisine'] if name in dishes['dietary'] ]
 
 
   
