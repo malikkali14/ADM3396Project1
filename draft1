@@ -1,0 +1,46 @@
+#user dictionary
+users_info = {
+    'Thevan':{'username':'ThevanM', 'password':'Meow123', 'name':'Thevan Mohanathas'},
+'Malik':{'username':'MalikA', 'password':'Woof123', 'name':'Malik Ali'},
+'Ashley':{'username':'AshleyK', 'password':'Moo123', 'name':'Ashley Keller'}
+}
+
+#login-funct
+  
+deflogin():
+  username=input("Please enter your username")
+  password=input("Please enter your password")
+
+for user in user_info:
+if users_info['username']==username and users_info['password']==password:
+    print("Welcome!")
+else:
+    print("this user does not exist")
+  
+#menu items dictionary
+dishes = {
+    'Spaghetti Bolognese':{'price':'12.99', 'type':'Dinner', 'dietary':'none', 'cuisine':'Italian'},
+    'Sushi':{'price':'8.49', 'type':'Dinner', 'dietary':'none', 'cuisine':'Japanese'},
+    'Chicken Caesar Salad':{'price':'9.99', 'type':'Lunch', 'dietary':'Gluten-Free', 'cuisine':'American'},
+    'Margherita Pizza':{'price':'10.99', 'type':'Dinner', 'dietary':'Vegetarian', 'cuisine':'Italian'},
+    'Tofu Stir-Fry':{'price':'11.49', 'type':'Dinner', 'dietary':'Vegan', 'cuisine':'Asian'},
+    'Cheeseburger':{'price':'5.99', 'type':'Lunch', 'dietary':'None', 'cuisine':'American'},
+    'Avocado Toast':{'price':'7.99', 'type':'Breakfast', 'dietary':'Vegetarian', 'cuisine':'American'},
+    'Beef Tacos':{'price':'8.79', 'type':'Dinner', 'dietary':'None', 'cuisine':'Mexican'},
+    'Veggie Curry':{'price':'12.49', 'type':'Dinner', 'dietary':'Vegan', 'cuisine':'Indian'},
+    'Salmon Fillet':{'price':'14.99', 'type':'Dinner', 'dietary':'None', 'cuisine':'Seafood'},
+    'Shrimp Alfredo':{'price':'15.99', 'type':'Dinner', 'dietary':'None', 'cuisine':'Italian'},
+    'Quinoa Salad':{'price':'9.29', 'type':'Lunch', 'dietary':'Vegan, Gluten-Free', 'cuisine':'American'},
+    'BBQ Ribs':{'price':'16.79', 'type':'Dinner', 'dietary':'None', 'cuisine':'American'},
+    'Caprese Salad':{'price':'7.49', 'type':'Lunch', 'dietary':'Vegetarian', 'cuisine':'Italian'},
+    'Chicken Shawarma':{'price':'10.99', 'type':'Dinner', 'dietary':'None', 'cuisine':'Middle Eastern'},
+    'Chocolate Fondue':{'price':'12.99', 'type':'Dessert', 'dietary':'None', 'cuisine':'American'},
+    'Pho Soup'{'price':'9.99', 'type':'Dinner', 'dietary':'None', 'cuisine':'Vietnamese'},
+    'Spinach & Artichoke Dip':{'price':'8.49', 'type':'Dinner', 'dietary':'Vegetarian', 'cuisine':'American'},
+    'Fruit Smoothie':{'price':'6.99', 'type':'Breakfast', 'dietary':'Vegan', 'cuisine':'Beverage'},
+    'Beef Stroganoff':{'price':'13.49', 'type':'Dinner', 'dietary':'None', 'cuisine':'Russian'},
+    'Pad Thai'{'price':'11.29', 'type':'Dinner', 'dietary':'None', 'cuisine':'Thai'},    
+}
+
+
+  
