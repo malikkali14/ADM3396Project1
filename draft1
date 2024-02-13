@@ -1,3 +1,5 @@
+#still have to add the rest from juypter notebook!!
+
 #user dictionary
 users_info = {
     'Thevan':{'username':'ThevanM', 'password':'Meow123', 'name':'Thevan Mohanathas'},
@@ -41,6 +43,25 @@ dishes = {
     'Beef Stroganoff':{'price':'13.49', 'type':'Dinner', 'dietary':'None', 'cuisine':'Russian'},
     'Pad Thai'{'price':'11.29', 'type':'Dinner', 'dietary':'None', 'cuisine':'Thai'},    
 }
+
+#sort by cuisine
+preferences = input("What cuisine would you like?")
+for preference in preferences:
+    for dishes['cuisine'] in dishes:
+        if preference==dishes['cuisine']:
+            print(dishes['cuisine'])
+
+#dietary restriction
+
+restriction = input("Do you have a dietary restriction?")
+for restriction in restrictions:
+    for dishes['dietary'] in dishes:
+        if restriction==dishes['dietary']:
+            print(dishes['dietary'])
+
+#options
+
+
 
 
   
